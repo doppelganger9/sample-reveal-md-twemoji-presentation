@@ -1,0 +1,28 @@
+image: "node:latest"
+
+stages:
+- build
+- pages
+
+build:
+  stage: build
+  script:
+  - npm install
+  - npm run export:site
+  artifacts:
+    name: _site
+    expire_in: 7d
+    paths:
+    - _site/
+
+pages:
+  stage: pages
+  dependencies:
+  - build
+  script:
+  - mv _site public
+  artifacts:
+    paths:
+    - public/
+  only:
+  - master

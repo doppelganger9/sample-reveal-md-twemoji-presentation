@@ -1,0 +1,94 @@
+div.slide-background:before {
+	content: 'sample reveal-md presentation with Twemojis';
+	font-size: .4em;
+	color: rgb(108,108,108);
+	padding-left: 2em;
+	padding-top: 2em;
+	background-image: url(header-banner.png);
+	background-size: contain;
+	display: block;
+	height: 4em;
+	width: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	mix-blend-mode: color-dodge;
+}
+div.slide-background:after {
+	content: '© David Lacourt 2019';
+	float: right;
+	position: absolute;
+	bottom: 2em;
+	left: 1em;
+	font-size: .3em;
+	color: rgb(108,108,108);
+	background-image: url(header-logo.png);
+	border-radius: 10em;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: block;
+	height: 4em;
+	width: 96%;
+	margin: 10em 0em 0em 0;
+	background-size: 5em;
+	padding-top: 1em;
+	padding-right: 5em;
+	padding-left: 1em;
+	text-align: right;
+	mix-blend-mode: color-dodge;
+}
+
+.reveal .controls {
+	color: rgb(137, 24, 218) !important;
+}
+
+img {
+	border: none !important;
+	box-shadow: none !important;
+}
+img:not(.emoji) {
+	height: 200pt !important;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5 {
+	color: rgb(112, 16, 172);
+}
+
+.reveal a {
+	mix-blend-mode: color-dodge;/* screen mais en plus prononcé */
+}
+
+.rouge {
+	color: rgb(146, 5, 168) !important;
+}
+
+.reveal pre.transparent.before {
+	margin-bottom: 0 !important;
+}
+.reveal pre.transparent.before + pre {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+.reveal pre.transparent.after {
+	margin-top: 0 !important;
+}
+.transparent code {
+	opacity: .2 !important;
+}
+
+.reveal pre code {
+	max-height: 100% !important;
+}
+
+.small code {
+	font-size: small !important;
+	line-height: 12px;
+}
+
+/* TWEMOJI */
+img.emoji {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em !important;
+   vertical-align: -0.1em;
+}

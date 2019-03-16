@@ -1,0 +1,31 @@
+{
+  "name": "sample-revealmd-twemoji",
+  "version": "1.0.0",
+  "description": "Sample Reveal-md presentation with Twemoji",
+  "scripts": {
+    "start": "reveal-md presentation.md -w --css local.css --theme white --port $PORT --preprocessor emoji2svgimg.js",
+    "export:site": "reveal-md presentation.md --css local.css --theme white --static _site --preprocessor emoji2svgimg.js",
+    "postexport:site": "cp *.png _site/ && cp robots.txt _site/ && cp *.png _site/_assets/",
+    "preexport:pdf": "cp presentation.md 2print.md && npm run remove-fragments-before-print && npm run remove-iframes-before-print",
+    "remove-fragments-before-print": "replace-in-file '/class=\"fragment\"/g' ' ' 2print.md --isRegex",
+    "remove-iframes-before-print": "replace-in-file '/<iframe.+?></iframe>/g' ' ' 2print.md --isRegex",
+    "export:pdf": "reveal-md 2print.md -w --css local.css --theme white --print presentation.pdf --preprocessor emoji2svgimg.js",
+    "postexport:pdf": "rm 2print.md"
+  },
+  "keywords": [
+    "twemoji",
+    "reveal-md",
+    "sample",
+    "presentation"
+  ],
+  "author": "David LACOURT <david.lacourt@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "10.3.0"
+  },
+  "dependencies": {
+    "replace-in-file": "3.4.2",
+    "reveal-md": "2.3.1",
+    "twemoji": "11.3.0"
+  }
+}
