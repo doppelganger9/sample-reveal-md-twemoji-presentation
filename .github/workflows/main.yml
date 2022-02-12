@@ -1,0 +1,31 @@
+name: build, export static site to GH Pages
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  build-static-site-and-export-to-gh-pages:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.5.1
+
+      - name: Run a multi-line script
+        run: |
+          npm ci
+          npm run export:site
+
+      - name: Publish to GitHub Pages (if triggered from master)
+        uses: JamesIves/github-pages-deploy-action@v4.2.3
+        if: github.ref == 'refs/heads/master'
+        with:
+          branch: gh-pages
+          folder: _site
