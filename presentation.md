@@ -68,15 +68,14 @@ this boy definitely looks like me when I was 10!
 
 ---
 
-## Now some code sample with highlights
+## Some code + line selection in highlight
 
 <div class="fragment">👇</div>
 
 ----
 <!-- .slide: data-transition="none" -->
 
-```
-
+```js [|1|2|6]
 (module
   (func $add (param $lhs i32) (param $rhs i32) (result i32)
     get_local $lhs
@@ -84,67 +83,6 @@ this boy definitely looks like me when I was 10!
     i32.add)
   (export "add" (func $add))
 )
-
-```
-
-----
-<!-- .slide: data-transition="none" -->
-
-```
-```
-<!-- .element: class="transparent before" -->
-```
-(module
-```
-```
-  (func $add (param $lhs i32) (param $rhs i32) (result i32)
-    get_local $lhs
-    get_local $rhs
-    i32.add)
-  (export "add" (func $add))
-)
-
-```
-<!-- .element: class="transparent after" -->
-
-----
-<!-- .slide: data-transition="none" -->
-
-```
-
-(module
-```
-<!-- .element: class="transparent before" -->
-```
-  (func $add (param $lhs i32) (param $rhs i32) (result i32)
-```
-```
-    get_local $lhs
-    get_local $rhs
-    i32.add)
-  (export "add" (func $add))
-)
-
-```
-<!-- .element: class="transparent after" -->
-
-----
-<!-- .slide: data-transition="none" -->
-
-```
-
-(module
-  (func $add (param $lhs i32) (param $rhs i32) (result i32)
-    get_local $lhs
-    get_local $rhs
-    i32.add)
-```
-<!-- .element: class="transparent before" -->
-```
-  (export "add" (func $add))
-)
-
-```
 
 ---
 
