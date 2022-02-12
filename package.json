@@ -4,7 +4,7 @@
   "description": "Sample Reveal-md presentation with Twemoji",
   "scripts": {
     "start": "reveal-md presentation.md -w --css local.css --theme white --port $PORT --preprocessor emoji2svgimg.js",
-    "export:site": "reveal-md presentation.md --css local.css --theme white --static dist --preprocessor emoji2svgimg.js --webmanifest site.webmanifest --serviceworker sw.js --absolute-url https://doppelganger9.github.io/sample-reveal-md-twemoji-presentation/ --featured-slide 1",
+    "export:site": "reveal-md presentation.md --css local.css --theme white --static dist --preprocessor emoji2svgimg.js --webmanifest site.webmanifest --serviceworker sw.js --absolute-url https://doppelganger9.github.io/sample-reveal-md-twemoji-presentation --featured-slide 1",
     "postexport:site": "cp sw.js dist/ && cp site.webmanifest dist/_assets/ && cp favicon.ico dist/ && cp *.png dist/ && cp robots.txt dist/ && cp *.png dist/_assets/ && ./complete-sw-cache.js",
     "preexport:pdf": "cp presentation.md 2print.md && npm run remove-fragments-before-print && npm run remove-iframes-before-print",
     "remove-fragments-before-print": "replace-in-file '/class=\"fragment\"/g' ' ' 2print.md --isRegex",
