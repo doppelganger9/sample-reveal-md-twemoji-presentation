@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./dist/reset.css" />
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/white.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+
+    <link rel="stylesheet" href="./_assets/local.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"># Sample Reveal-md + Twemoji <img class="emoji" draggable="false" alt="😎" src="https://twemoji.maxcdn.com/v/13.1.0/svg/1f60e.svg"/>
+</script></section><section ><section data-markdown><script type="text/template">
+## Demo presentation
+
+Based from [this blog post](https://lacourt.dev/2019/03/12/) and [this one too](https://lacourt.dev/2019/03/14/)
+</script></section><section data-markdown><script type="text/template">
+## Printing PDF
+
+- `npm run export:pdf`
+- open `presentation.pdf`
+- look at those beautifully rendered emojis
+</script></section><section data-markdown><script type="text/template">
+## Export static website
+
+- `npm run export:site`
+- open `_site/index.html`
+- look at this presentation with its beautifully rendered emojis
+</script></section></section><section ><section data-markdown><script type="text/template">
+## Fragments
+
+This will appear after some action
+<!-- .element: class="fragment" -->
+</script></section><section data-markdown><script type="text/template">
+### you went down <img class="emoji" draggable="false" alt="👇" src="https://twemoji.maxcdn.com/v/13.1.0/svg/1f447.svg"/>
+
+Now go <img class="emoji" draggable="false" alt="➡️" src="https://twemoji.maxcdn.com/v/13.1.0/svg/27a1.svg"/>
+</script></section></section><section  data-markdown><script type="text/template">
+## I told you about iframes
+
+<iframe style="height: 50vh; width: 100%; vertical-scroll: none;"  data-src="https://lacourt.dev/2019/03/12/#-iframes"></iframe>
+</script></section><section  data-markdown><script type="text/template">
+## Here is a fragmented ordered list with emojis inside
+<ol>
+  <li class="fragment"> <img class="emoji" draggable="false" alt="🔍" src="https://twemoji.maxcdn.com/v/13.1.0/svg/1f50d.svg"/> let's check this</li>
+  <li class="fragment"> <img class="emoji" draggable="false" alt="🎩" src="https://twemoji.maxcdn.com/v/13.1.0/svg/1f3a9.svg"/> magic hat</li>
+  <li class="fragment"> <img class="emoji" draggable="false" alt="👀" src="https://twemoji.maxcdn.com/v/13.1.0/svg/1f440.svg"/> look to your left</li>
+  <li class="fragment"> <img class="emoji" draggable="false" alt="🤹‍♀️" src="https://twemoji.maxcdn.com/v/13.1.0/svg/1f939-200d-2640-fe0f.svg"/> I'm juggling</li>
+</ol>
+</script></section><section  data-markdown><script type="text/template">
+> I think I told you about quotes?
+</script></section><section  data-markdown><script type="text/template">
+![win](https://media.giphy.com/media/eoxomXXVL2S0E/giphy.gif)
+<a href="https://giphy.com/gifs/internet-eoxomXXVL2S0E">via GIPHY</a></p>
+<!-- .element: style="height: 50vh !important;" -->
+
+this is a GIF for which I had to tweak the height.
+
+this boy definitely looks like me when I was 10!
+<!-- .element: style="font-size: .4em !important;" -->
+</script></section><section ><section data-markdown><script type="text/template">
+## Some code + line selection in highlight
+
+<div class="fragment"><img class="emoji" draggable="false" alt="👇" src="https://twemoji.maxcdn.com/v/13.1.0/svg/1f447.svg"/></div>
+</script></section><section data-markdown><script type="text/template"><!-- .slide: data-transition="none" -->
+
+```js [|1|2|6]
+(module
+  (func $add (param $lhs i32) (param $rhs i32) (result i32)
+    get_local $lhs
+    get_local $rhs
+    i32.add)
+  (export "add" (func $add))
+)
+</script></section></section><section  data-markdown><script type="text/template">
+## Questions <img class="emoji" draggable="false" alt="🤨" src="https://twemoji.maxcdn.com/v/13.1.0/svg/1f928.svg"/> ?
+<!-- .slide: data-background-color="rgb(220,75,68)" style="color: white !important;" -->
+</script></section><section  data-markdown><script type="text/template">
+## Thanks <img class="emoji" draggable="false" alt="🙇" src="https://twemoji.maxcdn.com/v/13.1.0/svg/1f647.svg"/>‍ !
+<!-- .slide: data-background-color="lightblue" data-text-color="white" -->
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background-color="gray" style="color: white !important;" -->
+
+## References, Sources & Articles
+
+<ul>
+    <li>first link</li>
+    <li>second link</li>
+</ul>
+<!-- .element: style="font-size: .35em !important;" -->
+</script></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
