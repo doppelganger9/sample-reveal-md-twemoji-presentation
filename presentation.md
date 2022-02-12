@@ -19,11 +19,19 @@ Based from [this blog post](https://lacourt.dev/2019/03/12/) and [this one too](
 ## Export static website
 
 - `npm run export:site`
-- open `_site/index.html`
+- open `dist/index.html`
+- look at this presentation with its beautifully rendered emojis
+
+----
+
+## Local web server to check exported static website
+
+- `npm run export:site`
+- `rpm run serve:static`
+- [open `http://localhost:8000`](http://localhost:8000)
 - look at this presentation with its beautifully rendered emojis
 
 ---
-
 ## Fragments
 
 This will appear after some action

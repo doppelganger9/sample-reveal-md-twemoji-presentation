@@ -10,17 +10,17 @@ build:
   - npm install
   - npm run export:site
   artifacts:
-    name: _site
+    name: dist
     expire_in: 7d
     paths:
-    - _site/
+    - dist/
 
 pages:
   stage: pages
   dependencies:
   - build
   script:
-  - mv _site public
+  - mv dist public
   artifacts:
     paths:
     - public/
