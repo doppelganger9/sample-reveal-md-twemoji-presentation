@@ -60,7 +60,6 @@ const PRECACHE_URLS = [
         'https://doppelganger9.github.io/sample-reveal-md-twemoji-presentation/favicon-16x16.png',
         'https://doppelganger9.github.io/sample-reveal-md-twemoji-presentation/favicon-32x32.png',
         'https://doppelganger9.github.io/sample-reveal-md-twemoji-presentation/favicon.ico',
-        'https://doppelganger9.github.io/sample-reveal-md-twemoji-presentation/featured-slide.jpg',
         'https://doppelganger9.github.io/sample-reveal-md-twemoji-presentation/header-banner.png',
         'https://doppelganger9.github.io/sample-reveal-md-twemoji-presentation/header-logo.png',
         'https://doppelganger9.github.io/sample-reveal-md-twemoji-presentation/index.html',
