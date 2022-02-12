@@ -19,7 +19,7 @@ function walkDir(dir, callback) {
 try {
   const files = [];
   walkDir('./dist', file => files.push(file));
-  const filesWithRootDir = files.map(file => file.substring('./dist'.length)).filter(file => file.indexOf('sw.js')<0);
+  const filesWithRootDir = files.map(file => file.replace('./dist', 'https://doppelganger9.github.io/sample-reveal-md-twemoji-presentation')).filter(file => file.indexOf('sw.js')<0);
   const fileListToReplaceInServiceWorker = filesWithRootDir.map(f => `        '${f}'`).join(',\n');
 
   const result = replace.sync({
