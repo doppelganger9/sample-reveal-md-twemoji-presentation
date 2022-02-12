@@ -1,0 +1,43 @@
+{
+  "name": "Sample Reveal-MD Twemoji Presentation",
+  "short_name": "Rev-Twemoji",
+  "description": "A sample Reveal-MD + Twemoji presentation with PWA bits",
+  "theme_color": "#9205a8",
+  "background_color": "#ffffff",
+  "start_url": "https://doppelganger9.github.io/sample-reveal-md-twemoji-presentation/",
+  "id": "/",
+  "orientation": "landscape",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/maskable_icon.png",
+      "sizes": "724x724",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
