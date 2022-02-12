@@ -1,7 +1,7 @@
 div.slide-background:before {
 	content: 'sample reveal-md presentation with Twemojis';
 	font-size: .4em;
-	color: rgb(108,108,108);
+	color: #6c6c6c;
 	padding-left: 2em;
 	padding-top: 2em;
 	background-image: url(header-banner.png);
@@ -21,7 +21,7 @@ div.slide-background:after {
 	bottom: 2em;
 	left: 1em;
 	font-size: .3em;
-	color: rgb(108,108,108);
+	color: #6c6c6c;
 	background-image: url(header-logo.png);
 	border-radius: 10em;
 	background-size: contain;
@@ -39,7 +39,7 @@ div.slide-background:after {
 }
 
 .reveal .controls {
-	color: rgb(137, 24, 218) !important;
+	color: #8918da !important;
 }
 
 img {
@@ -51,7 +51,7 @@ img:not(.emoji) {
 }
 
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5 {
-	color: rgb(112, 16, 172);
+	color: #7010ac;
 }
 
 .reveal a {
@@ -59,7 +59,7 @@ img:not(.emoji) {
 }
 
 .rouge {
-	color: rgb(146, 5, 168) !important;
+	color: #9205a8 !important;
 }
 
 .reveal pre.transparent.before {
