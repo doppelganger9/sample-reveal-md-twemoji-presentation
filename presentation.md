@@ -160,7 +160,7 @@ this boy definitely looks like me when I was 10!
 
 <!-- .slide: data-background-color="gray" style="color: white !important;" -->
 
-## References, Sources & Articles about WASM
+## References, Sources & Articles
 
 <ul>
     <li>first link</li>

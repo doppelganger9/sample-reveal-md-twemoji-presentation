@@ -1,6 +1,6 @@
 {
   "name": "sample-revealmd-twemoji",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sample Reveal-md presentation with Twemoji",
   "scripts": {
     "start": "reveal-md presentation.md -w --css local.css --theme white --port $PORT --preprocessor emoji2svgimg.js",
@@ -21,11 +21,11 @@
   "author": "David LACOURT <david.lacourt@gmail.com>",
   "license": "MIT",
   "engines": {
-    "node": "10.3.0"
+    "node": ">10"
   },
   "dependencies": {
-    "replace-in-file": "3.4.2",
-    "reveal-md": "2.3.1",
-    "twemoji": "11.3.0"
+    "replace-in-file": "6.3.2",
+    "reveal-md": "5.3.2",
+    "twemoji": "13.1.0"
   }
 }

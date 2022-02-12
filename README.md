@@ -11,3 +11,10 @@ I made a logo with crappy transparency.
 I also made a stupid gradient banner.
 
 ![fake banner](./header-banner.png)
+
+## CI/CD
+
+Choose your player:
+- [Static site hosted on GitLab Pages, built via GitLab CI](.gitlab-ci.yml) 
+- [Static site hosted on GitHub Pages, built via GitHub Actions](.github/workflows/main.yml)
+- [Live server running on Heroku, serving the site](Procfile)

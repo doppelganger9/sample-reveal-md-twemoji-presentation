@@ -2,3 +2,4 @@ node_modules/
 _site/
 presentation.pdf
 2print.md
+npm-cache/
