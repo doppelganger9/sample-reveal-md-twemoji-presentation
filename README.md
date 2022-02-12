@@ -31,3 +31,5 @@ And I will also add those later:
 - meta theme-color
 
 With these changes, the app gets a decent LightHouse report in the PWA section.
+
+![LightHouse report](lh-report.jpg)
