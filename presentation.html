@@ -13,6 +13,16 @@
 
     <link rel="stylesheet" href="./_assets/local.css" />
 
+    <link rel="manifest" href="./_assets/site.webmanifest">
+    <script>
+     if('serviceWorker' in navigator) {
+       navigator.serviceWorker
+                .register('./sw.js')
+                .then(function(registration) { console.log("Service Worker Registered with scope: " + registration.scope); })
+                .catch(function(error) { console.log("Service Worker Registration failed with error: "+ error); });
+     }
+     </script>
+
   </head>
   <body>
     <div class="reveal">
